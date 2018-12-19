@@ -1,0 +1,538 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script>
+  function submit1()
+  {
+  a=document.getElementById("fname");
+  b=document.getElementById("lname");
+  c=document.getElementById("ename");
+  d=document.getElementById("pname");
+  e=document.getElementById("rname");
+  f=document.getElementById("date");
+  g=document.getElementById("month");
+  h=document.getElementById("year");
+  k=document.getElementById("hname");
+  m=document.getElementById("mname");
+ var radios = document.getElementsByName('gender');
+var flag="false";
+for (var i = 0, length = radios.length; i < length; i++) {
+
+    if (radios[i].checked) {
+       flag="true";
+        value=radios[i].value;
+        break;
+    }
+}
+  if (a.value=="")
+  {
+  alert("enter your first name");
+  }
+  else if (b.value=="")
+  {alert("enter your last name");}
+  else if (c.value=="")
+  {
+  alert("enter your email address");}
+  else if (d.value=="")
+  {
+  alert("your password is missing");
+  }
+  else if (e.value=="")
+  {
+  alert("Please retype your password.");
+  }
+  
+  else if (f.selectedIndex==0)
+  {
+  alert("please enter the date");}
+  else if (g.selectedIndex==0)
+  {
+  alert("please enter the month");
+  }
+  else if(h.selectedIndex==0)
+  {
+  alert("please enter the year");}
+  else if (k.value=="")
+  {
+  alert("please mention your hometown.");
+  }
+  
+   else if (flag=="false")
+{
+alert("select gender");
+}
+else if (m.value=="")
+  {
+  alert("Please write your mobile number.");
+  }
+  }
+  </script>
+  <script>
+  function signup1()
+  {a=document.getElementById("ename1");
+  b=document.getElementById("pname1");
+ if(a.value=="")
+  {a.style="border:2px solid red";
+  }
+  else if(b.value=="")
+  {b.style="border:2px solid red";
+  a.style="border:2px solid green";
+  }
+  }
+  </script>
+
+ <style>
+  
+  #first{
+  height:250px;width:350px;margin-top:50px}
+  #first1{
+  color:black;font-size:30px;margin-top:20px;margin-left:20px}
+  #go{color:black;font-size:20px;
+  }
+  #go1{
+  display:none;color:black;font-size:20px;}
+  #big{display:none;
+  color:black;font-size:20px;margin-top:10px;margin-left:50px}
+  #go3{
+  display:none;}
+  #god4{
+  display:none;color:black;}
+  
+  #first2{
+  color:black;font-size:30px;margin-top:20px;margin-left:20px}
+  #big1{display:none;
+  color:black;font-size:20px;margin-top:10px;margin-left:50px}
+  #first3{
+  color:black;font-size:28px;}
+  #big2{display:none;
+  color:white;font-size:20px;margin-top:10px;margin-left:50px}
+  #first4{
+  color:black;font-size:30px;margin-top:20px;margin-left:20px}
+  #big3{display:none;
+  color:black;font-size:20px;margin-top:10px;margin-left:50px}
+  #first5{
+  color:white;font-size:28px;}
+  #big4{display:none;
+  color:black;font-size:20px;margin-top:10px;margin-left:55px}
+  #first6{
+  color:black;font-size:30px;margin-top:20px;margin-left:20px}
+  #big5{display:none;
+  color:black;font-size:20px;margin-left:50px;}
+  #first7{
+  color:white;font-size:28px;}
+  #big6{display:none;
+  color:black;font-size:20px;margin-top:10px;}
+  #first8{
+  color:white;font-size:28px;}
+  #big7{display:none;
+  color:white;font-size:20px;margin-top:10px;background-color:blue;}
+  #game1
+  {
+  display:none;}
+  #game3{
+  display:none}
+  #cat{
+  display:none;}
+  #card{
+  display:none;}
+  </style>
+  <script> 
+$(document).ready(function(){
+    $("#first1").click(function(){
+        $("#big").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#go").click(function(){
+        $("#go1").show("slow");
+       
+        $("#second").hide("slow");
+        $("#go3").hide("slow");
+        $("#god4").hide("slow");
+        $("#cat").hide("slow");
+        $("#gang").hide("slow");
+        $("#card").hide("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#first2").click(function(){
+        $("#big1").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#go2").click(function(){
+        $("#go3").show("slow");
+       
+        $("#second").hide("slow");
+        $("#go1").hide("slow");
+        $("#god4").hide("slow");
+        $("#cat").hide("slow");
+        $("#gang").hide("slow");
+        $("#card").hide("slow");
+    });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+    $("#first3").click(function(){
+        $("#big3").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#first4").click(function(){
+        $("#big4").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#go5").click(function(){
+        $("#god4").show("slow");
+        $("#second").hide("slow");
+        $("#go1").hide("slow");
+        $("#go4").hide("slow");
+        $("#go3").hide("slow");
+        $("#cat").hide("slow");
+        $("#gang").hide("slow");
+        $("#card").hide("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#first6").click(function(){
+        $("#big5").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#game").click(function(){
+        $("#game1").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#game2").click(function(){
+        $("#game3").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#c6").click(function(){
+        $("#cat").show("slow");
+       
+        $("#second").hide("slow");
+        $("#go3").hide("slow");
+        $("#god4").hide("slow");
+        $("#go1").hide("slow");
+        $("#gang").hide("slow");
+        $("#card").hide("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#c3").click(function(){
+        $("#second").show("slow");
+       
+        $("#cat").hide("slow");
+        $("#go3").hide("slow");
+        $("#god4").hide("slow");
+        $("#go1").hide("slow");
+        $("#card").hide("slow");
+       
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#c9").click(function(){
+        $("#card").show("slow");
+        $("#second").hide("slow");
+        $("#go1").hide("slow");
+        $("#go4").hide("slow");
+        $("#go3").hide("slow");
+        $("#cat").hide("slow");
+        $("#gang").hide("slow");
+        $("#god4").hide("slow");
+    });
+});
+
+</script>
+  </head>
+  <body>
+  <form>
+  <div id="second">
+  <nav class = "navbar navbar-default" style="background-color:darkblue;height:100px;"
+role = "navigation" >
+<div class = "navbar-header" >  <a class="navbar-brand" style="color:white;font-size:30px;" href="#"><b>DAILY LIFESTYLE</b></a>
+
+<button type = "button"
+class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse" >
+<span class = "icon-bar"></span>
+<span class = "icon-bar"></span >
+<span class = "icon-bar" ></span>
+</button >
+</div>
+
+<div class = "navbar-collapse collapse">
+
+<ul class="nav navbar-nav navbar-right" style="background-color:darkblue;color:white;border:none;font-size:27px;">
+     
+   <li id="c3" class="active"><a href="#"  style="color:white">HOME</a></li>
+      <li id="c6"><a href="#" style="color:white">SignUp</a></li>
+    
+	   
+		<li id="c9"><a href="#" style="color:white;">SignIn</a></li>
+    </ul>
+	
+  </div>
+</nav>
+
+
+
+<div class="container text-center">
+<div class="row">
+<div class="col-md-2 text-center">
+
+<div><img style="margin-top:80px;margin-left:10px" src="1.png" height="200px" width="200px"></div>
+
+
+
+</div>
+<div class="col-md-3 text-center" >
+<div id="first1"><u>Clothing</u>
+</div>
+<div id="big">different type of clothes winter summer rainy.to get more details then
+click  world is nothing without so think before wear it it's precious and nice.<div id="go"><u>world</u></div>
+</div>
+
+
+
+
+</div>
+<div class="col-md-2 text-center">
+
+<div><img style="margin-top:60px;margin-left:10px" src="2.png" height="200px" width="200px"></div>
+
+</div>
+<div class="col-md-3 text-center">
+<div id="first2"><u>Clothing</u>
+</div>
+<div id="big1">different type of clothes winter summer rainy.to get more details then
+click world is nothing without so think before wear it it's precious and nice.<div id="go2"><u>world</u></div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-2 text-center">
+
+<div><img style="margin-top:60px;margin-left:10px" src="1.png" height="200px" width="200px"></div>
+
+</div>
+<div class="col-md-3 text-center" >
+<div id="first4"><u>Clothing</u>
+</div>
+<div id="big4">different type of clothes winter summer rainy.to get more details then
+click world is nothing without so think before wear it it's precious and nice<div id="go5"><u>world</u></div>
+</div>
+
+
+
+
+</div>
+<div class="col-md-2 text-center">
+<div><img style="margin-top:60px;margin-left:10px" src="5.png" height="200px" width="200px"></div>
+
+
+
+</div>
+<div class="col-md-3 text-center">
+<div id="first6"><u>Clothing</u>
+</div>
+<div id="big5">different type of clothes winter summer rainy.to get more details then
+click world is nothing without so think before wear it it's precious and nice<div id="god6"><u>world</u></div>
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="go1">
+<div class="row">
+<div class="col-md-12 text-center"><h1>Clothing</h1>
+</div>
+</div>
+</div>
+<div class="container" id="go3">
+<div class="row">
+<div class="col-md-12 text-center"><h1>Clothing</h1>
+</div>
+</div>
+</div>
+<div class="container" id="god4">
+<div class="row">
+<div class="col-md-12 text-center"><h1>Clothing</h1>
+</div>
+</div>
+</div>
+<br><br><br><br><div id="gang">
+<footer class="page-footer">
+<div class="row" style="background-color:darkblue;color:white;width:100%">
+<div class="col-md-12" id="game"><h1><u>About the Company</u></h1>
+<p id="game1">It all about work and time</p>
+</div>
+<div class="col-md-12" id="game2"><h1><u>Details</u></h1>
+<ul id="game3">
+<li>Address</li>
+<li>Phone</li>
+<li>other details</li>
+</ul>
+</div>
+<div class="footer-copyright">
+            <div class="col-md-12"style="color:white;background-color:darkblue">
+            © 2014 Copyright Text
+            
+            </div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+
+  <div class="container-fluid" id="cat">
+  <div class="row">
+    <div class="col-md-12 text-right"><a href="index.html"><img src="back.png" height="50px" width="50px"></a>
+	<br>Back</div>
+  <div class="col-md-12 text-center">
+  <h1 style="font-size:50px"><b><u>Welcome to SignUp</u></b></h1>
+  </div>
+  <div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">Enter your name</div>
+  <div class="col-md-12 text-center"><input style="height:35px;margin-left:10px;" type="text" id="fname" size="20" name="fname" placeholder="Enter your First name"  value=""/>
+<input style="height:35px" type="text" id="lname" name="lname" size="20" placeholder="Enter your last name"value=""/></div>
+   
+   <div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">Enter your Email address</div>
+	  <div class="col-md-12 text-center"><input style="height:35px" type="text" id="ename" name="ename" size="40" placeholder="Enter your Email address"value=""/></div>
+    
+	<div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">Choose your Password</div>
+	  <div class="col-md-12 text-center"><input style="height:35px" type="password" id="pname" name="pname" size="40" placeholder="Choose your password"value=""/></div>
+  
+  <div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">Retype your Password</div>
+	  <div class="col-md-12 text-center"><input style="height:35px" type="password" id="rname" name="rname" size="40" placeholder="Retype your password"value=""/></div>
+   
+   <div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">
+   Date of Birth<br>Date <select option="date" id="date">
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+   <option value="8">8</option>
+   <option value="9">9</option>
+   <option value="10">10</option>
+   <option value="11">11</option>
+   <option value="12">12</option>
+   <option value="13">13</option>
+   <option value="14">14</option>
+   <option value="15">15</option>
+   <option value="16">16</option>
+   <option value="17">17</option>
+   <option value="18">18</option>
+   <option value="19">19</option>
+   <option value="20">20</option>
+   <option value="21">21</option>
+   <option value="22">22</option>
+   <option value="23">23</option>
+   <option value="24">24</option>
+   <option value="25">25</option>
+   <option value="26">26</option>
+   <option value="27">27</option>
+   <option value="28">28</option>
+   <option value="29">29</option>
+   <option value="30">30</option>
+   <option value="31">31</option>
+   </select>
+   Month<select option="month" id="month">
+   <option value="january">january</option>
+   <option value="febuary">febuary</option>
+   <option value="march">march</option>
+   <option value="april">april</option>
+   <option value="may">may</option>
+   <option value="june">june</option>
+   <option value="july">july</option>
+   <option value="august">august</option>
+   <option value="september">september</option>
+   <option value="october">october</option>
+   <option value="november">november</option>
+   <option value="december">december</option>
+   </select>
+   year<select option="year" id="year">
+   <option value="1990">1990</option>
+   <option value="1991">1991</option>
+   <option value="1992">1992</option>
+   <option value="1993">1993</option>
+   <option value="1994">1994</option>
+   <option value="1995">1995</option>
+   <option value="1996">1996</option>
+   <option value="1997">1997</option>
+   <option value="1998">1998</option>
+   <option value="1999">1999</option>
+   <option value="2000">2000</option>
+   <option value="2001">2001</option>
+   </select>
+   </div>
+   <div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">Your Hometown</div>
+	  <div class="col-md-12 text-center"><input style="height:35px" type="text" id="hname" name="hname" size="40" placeholder="write about your hometown"value=""/></div><br><br><br><br><br>
+  <div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">
+ Gender<br><input  type="radio" id="male" name="gender" value="male">male
+ <input type="radio" id="female" name="gender" value="female">female
+ </div><br><br><br>
+ <div class="col-md-12 text-center" style="font-size:21px;margin-top:10px">Mobile number</div>
+	  <div class="col-md-12 text-center"><input style="height:35px" type="text" id="mname" name="mname" size="40" placeholder="enter your mobile number"value=""/></div><br><br><br><br>
+   <div class="col-md-12 text-center" style="font-size:20px;margin-top:15px"><input style="background-color:green;color:white" type="button" id="submit" name="submit" onclick="submit1()" value="submit"></div>
+  </div>
+  </div>
+  
+ <div class="container" id="card">
+ <div class="row">
+ <div class="col-md-12 text-right"><a href="index.html"><img src="back.png" height="50px" width="50px"></a>
+	<br>Back</div>
+ <div class="col-md-12 text-center" style="font-size:40px"><u>Sign In to your account</u></div>
+ <div class="col-md-12 text-center" style="margin-top:60px;font-size:24px"> Email Address
+ <br><input style="height:35px;" type="text" id="ename1" name="ename1" size="24" onclick="ename1()" placeholder="enter your email address"value=""/>
+ </div>
+ <div class="col-md-12 text-center" style="margin-top:30px;font-size:24px"> Password
+ <br><input style="height:35px;" type="text" id="pname1" name="pname1" size="24" placeholder="enter your password"value=""/>
+ </div>
+  <div class="col-md-12 text-center" style="margin-top:30px;font-size:24px"><u>Forgotten your password</u></div>
+ <div class="col-md-12 text-center"><input style="background-color:green;border:green;color:white;margin-top:20px;height:40px;width:90px;border-radius:20px" type="button" id="sign" name="sign" onclick="signup1()" value="signup"/></div>
+ </div>
+ </div>
+       </form>     
+
+  </body>
+  </html>
